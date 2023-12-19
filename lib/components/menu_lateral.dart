@@ -4,6 +4,7 @@ import 'package:navigation_drawer/screens/columns_rows_screen.dart';
 import 'package:navigation_drawer/screens/expanded_screen.dart';
 import 'package:navigation_drawer/screens/safe_area_screen.dart';
 import 'package:navigation_drawer/screens/texts_screens.dart';
+import 'package:navigation_drawer/screens/wrap_screen.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({
@@ -52,6 +53,13 @@ class MenuLateral extends StatelessWidget {
             leading: const Icon(Icons.abc_rounded),
             onTap: (){
               Navigator.push(context,MaterialPageRoute(builder: (context)=> const ExpandedScreen()));
+            },
+          ),
+          ListTile(
+            title: const Text('Wrap'),
+            leading: const Icon(Icons.abc_rounded),
+            onTap: (){
+              Navigator.push(context,MaterialPageRoute(builder: (context)=> const WrapScreen()));
             },
           ),
         ],
